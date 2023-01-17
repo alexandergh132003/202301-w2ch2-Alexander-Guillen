@@ -5,3 +5,5 @@ const numbersEquals = (valueA, valueB) => {
     return Object.is(Math.abs(valueA), Math.abs(valueB));
   }
 };
+
+export default numbersEquals;
