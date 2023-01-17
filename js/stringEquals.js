@@ -14,3 +14,5 @@ const stringEquals = (valueA, valueB) => {
     return result;
   }
 };
+
+export default stringEquals;
