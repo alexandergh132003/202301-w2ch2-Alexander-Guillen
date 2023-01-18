@@ -1,4 +1,4 @@
-const stringEquals = (valueA, valueB) => {
+const equalStrings = (valueA, valueB) => {
   if (valueA.length != valueB.length) {
     return false;
   } else {
@@ -15,4 +15,4 @@ const stringEquals = (valueA, valueB) => {
   }
 };
 
-export default stringEquals;
+export default equalStrings;

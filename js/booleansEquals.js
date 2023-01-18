@@ -1,5 +1,5 @@
-const booleansEquals = (valueA, valueB) => {
+const equalBooleans = (valueA, valueB) => {
   return Object.is(+valueA, +valueB);
 };
 
-export default booleansEquals;
+export default equalBooleans;
