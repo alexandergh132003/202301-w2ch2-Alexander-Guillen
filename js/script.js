@@ -1,6 +1,6 @@
-import booleansEquals from "./booleansEquals.js";
-import numbersEquals from "./numbersEquals.js";
-import stringEquals from "./stringEquals.js";
+import equalStrings from "./stringEquals.js";
+import equalBooleans from "./booleansEquals.js";
+import equalNumbers from "./numbersEquals.js";
 
 const strictEquals = (valueA, valueB) => {
   let valueAType = typeof valueA,
@@ -8,15 +8,15 @@ const strictEquals = (valueA, valueB) => {
 
   if (Object.is(valueAType, valueBType)) {
     if (Object.is(valueAType, "number") && Object.is(valueBType, "number")) {
-      return numbersEquals(valueA, valueB);
+      return equalNumbers(valueA, valueB);
     }
 
     if (Object.is(valueAType, "string") && Object.is(valueBType, "string")) {
-      return stringEquals(valueA, valueB);
+      return equalBooleans(valueA, valueB);
     }
 
     if (Object.is(valueAType, "boolean") && Object.is(valueAType, "boolean")) {
-      return booleansEquals(valueA, valueB);
+      return equalStrings(valueA, valueB);
     }
   } else {
     return false;
